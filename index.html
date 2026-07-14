@@ -1,129 +1,136 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ixel Gudiño | English Educator</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        neutral: { 50: '#F9FAFB', 800: '#1F2937' },
-                        accent: { 600: '#4F46E5' } // Un tono azul profundo profesional
-                    }
-                }
-            }
-        }
-    </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #fdfbf7 0%, #f4f1ea 100%); }
     </style>
 </head>
+<body class="text-stone-700 bg-[#FDFBF7]">
 
-<body class="bg-neutral-50 text-neutral-800">
-
-    <nav class="fixed w-full z-50 bg-neutral-50/80 backdrop-blur-md border-b border-neutral-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tight">Ixel Gudiño</span>
-            <div class="space-x-8 text-sm font-medium">
-                <a href="#about" class="hover:text-accent-600 transition">Sobre mí</a>
-                <a href="#services" class="hover:text-accent-600 transition">Servicios</a>
-                <a href="#contact" class="bg-neutral-800 text-white px-5 py-2 rounded-full hover:bg-neutral-700 transition">Contacto</a>
-            </div>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-xl font-semibold tracking-tight">Ixel Gudiño</div>
+        <div class="hidden md:flex space-x-8 text-sm">
+            <a href="#about" class="hover:text-amber-700 transition">Sobre mí</a>
+            <a href="#services" class="hover:text-amber-700 transition">Servicios</a>
+            <a href="#contact" class="hover:text-amber-700 transition">Contacto</a>
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-light mb-8 leading-tight">
-                Domina el inglés con <span class="font-semibold text-accent-600">estrategia y claridad.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-neutral-600 mb-12 max-w-2xl mx-auto">
-                Transformo la manera en que aprendes inglés a través de metodologías personalizadas diseñadas para profesionales y estudiantes comprometidos.
-            </p>
-            <a href="#contact" class="inline-block bg-accent-600 text-white px-10 py-4 rounded-lg font-medium hover:bg-indigo-700 transition shadow-lg">
-                Agenda tu sesión gratuita
-            </a>
-        </div>
+    <header class="hero-gradient min-h-[70vh] flex flex-col justify-center items-center text-center p-10">
+        <h1 class="text-5xl md:text-7xl font-light mb-6 text-stone-900">Dominio del inglés con <br><span class="italic font-normal">enfoque personalizado</span></h1>
+        <p class="max-w-xl text-lg text-stone-600 mb-10 leading-relaxed">
+            Transformo tu manera de aprender inglés mediante una metodología estratégica, diseñada para profesionales y estudiantes que buscan resultados reales y sostenibles.
+        </p>
+        <a href="#contact" class="bg-stone-900 text-white px-8 py-4 rounded-full hover:bg-amber-800 transition shadow-lg">Agendar clase muestra</a>
     </header>
 
-    <section id="about" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div class="aspect-square bg-neutral-200 rounded-2xl overflow-hidden">
-                <img src="https://placehold.co/600x600/e5e7eb/4f46e5?text=Ixel+Gudiño" alt="Ixel Gudiño" class="w-full h-full object-cover">
+    <section id="about" class="max-w-5xl mx-auto py-24 px-6">
+        <h2 class="text-sm uppercase tracking-widest text-amber-700 mb-4">Sobre mí</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="border-l border-stone-200 pl-6">
+                <h3 class="text-xl mb-2 font-medium">Experiencia Docente</h3>
+                <p class="text-stone-500">Más de 4 años de experiencia continua en la enseñanza del idioma inglés, acompañando a diversos perfiles a alcanzar sus metas de fluidez.</p>
             </div>
-            <div>
-                <h2 class="text-3xl font-light mb-6">Un enfoque humano y profesional</h2>
-                <p class="text-neutral-600 mb-6 leading-relaxed">
-                    Con más de X años de experiencia, mi enfoque no es solo enseñar gramática, sino facilitar la comunicación efectiva. Entiendo los desafíos de aprender una segunda lengua y los abordo con paciencia, estructura y un toque de personalización única.
-                </p>
-                <div class="flex gap-4 text-accent-600 font-semibold">
-                    <span>✓ Certificada internacionalmente</span>
-                    <span>✓ Enfoque ejecutivo</span>
-                </div>
+            <div class="border-l border-stone-200 pl-6">
+                <h3 class="text-xl mb-2 font-medium">Licenciatura</h3>
+                <p class="text-stone-500">Título profesional en Licenciatura en Lengua Inglesa, brindando una base gramatical, lingüística y pedagógica sólida para una enseñanza técnica precisa.</p>
+            </div>
+            <div class="border-l border-stone-200 pl-6">
+                <h3 class="text-xl mb-2 font-medium">Maestría</h3>
+                <p class="text-stone-500">Maestría en Educación con especialización en nuevas metodologías de aprendizaje, lo que permite adaptar las clases a los estilos individuales de cada estudiante.</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl text-center font-light mb-16">Servicios Especializados</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+    <section id="services" class="bg-stone-100 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-light mb-12">Programas y Servicios</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
-                <div class="p-8 border border-neutral-100 rounded-2xl hover:shadow-xl transition shadow-sm">
-                    <div class="w-12 h-12 bg-indigo-50 text-accent-600 rounded-lg flex items-center justify-center mb-6 text-2xl">01</div>
-                    <h3 class="text-xl font-medium mb-4">Inglés Ejecutivo</h3>
-                    <p class="text-neutral-600">Preparación para presentaciones, reuniones internacionales y negociación en entornos globales.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <h4 class="font-semibold text-lg mb-2">Inglés General</h4>
+                    <p class="text-sm text-stone-500 mb-4">Ideal para principiantes y nivel intermedio.</p>
+                    <p class="text-xl font-medium text-amber-800">$350 MXN / hora</p>
+                    <p class="text-xs text-stone-400 mt-4">Lun-Vie: 9am - 6pm</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="p-8 border border-neutral-100 rounded-2xl hover:shadow-xl transition shadow-sm">
-                    <div class="w-12 h-12 bg-indigo-50 text-accent-600 rounded-lg flex items-center justify-center mb-6 text-2xl">02</div>
-                    <h3 class="text-xl font-medium mb-4">Inglés Académico</h3>
-                    <p class="text-neutral-600">Preparación para exámenes TOEFL, IELTS y redacción de artículos de investigación científica.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <h4 class="font-semibold text-lg mb-2">Business English</h4>
+                    <p class="text-sm text-stone-500 mb-4">Inglés enfocado en entornos corporativos y negociaciones.</p>
+                    <p class="text-xl font-medium text-amber-800">$500 MXN / hora</p>
+                    <p class="text-xs text-stone-400 mt-4">Martes y Jueves: 7pm</p>
                 </div>
                 <!-- Card 3 -->
-                <div class="p-8 border border-neutral-100 rounded-2xl hover:shadow-xl transition shadow-sm">
-                    <div class="w-12 h-12 bg-indigo-50 text-accent-600 rounded-lg flex items-center justify-center mb-6 text-2xl">03</div>
-                    <h3 class="text-xl font-medium mb-4">Conversación Fluida</h3>
-                    <p class="text-neutral-600">Talleres de conversación diseñados para desbloquear el habla y mejorar la pronunciación.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <h4 class="font-semibold text-lg mb-2">Preparación Certificación</h4>
+                    <p class="text-sm text-stone-500 mb-4">TOEFL, IELTS y exámenes de Cambridge.</p>
+                    <p class="text-xl font-medium text-amber-800">$450 MXN / hora</p>
+                    <p class="text-xs text-stone-400 mt-4">Sábados: 10am - 2pm</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <h4 class="font-semibold text-lg mb-2">Inglés para Niños</h4>
+                    <p class="text-sm text-stone-500 mb-4">Aprendizaje lúdico y dinámico para infantes.</p>
+                    <p class="text-xl font-medium text-amber-800">$300 MXN / hora</p>
+                    <p class="text-xs text-stone-400 mt-4">Lun-Vie: 3pm - 5pm</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-light mb-16">Lo que dicen mis estudiantes</h2>
-            <blockquote class="text-2xl italic text-neutral-700 mb-8">
-                "Las clases de Ixel cambiaron mi perspectiva profesional. Pasé de tener miedo a hablar en reuniones a liderar presentaciones en inglés con total confianza."
-            </blockquote>
-            <p class="font-semibold">— CEO, Tech Startup</p>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 px-6">
-        <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-neutral-100">
-            <h2 class="text-3xl font-light mb-8 text-center">Iniciemos una conversación</h2>
-            <form action="#" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Nombre" class="w-full p-4 rounded-lg bg-neutral-50 border border-neutral-200 focus:outline-accent-600">
-                    <input type="email" placeholder="Email" class="w-full p-4 rounded-lg bg-neutral-50 border border-neutral-200 focus:outline-accent-600">
+    <section class="py-24 max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-light mb-12 text-center">Historias de Éxito</h2>
+        <div class="space-y-12">
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-stone-50 p-6 rounded-lg border-l-4 border-amber-700">
+                    <p class="italic text-stone-600 mb-4">"Gracias a Ixel, logré superar mi entrevista de trabajo en inglés. Su método es directo y muy claro."</p>
+                    <span class="text-sm font-semibold">— Carlos R., 32 años (Gerente Comercial)</span>
                 </div>
-                <textarea rows="4" placeholder="¿En qué puedo ayudarte?" class="w-full p-4 rounded-lg bg-neutral-50 border border-neutral-200 focus:outline-accent-600"></textarea>
-                <button class="w-full bg-neutral-800 text-white py-4 rounded-lg hover:bg-black transition">Enviar mensaje</button>
-            </form>
+                <div class="bg-stone-50 p-6 rounded-lg border-l-4 border-stone-400">
+                    <p class="italic text-stone-600 mb-4">"A mi hijo le encanta aprender con ella. Nunca pensé que se divertiría tanto estudiando gramática."</p>
+                    <span class="text-sm font-semibold">— María L., mamá de estudiante (9 años)</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-neutral-200 text-center text-neutral-500">
-        <p>© 2026 Ixel Gudiño. Todos los derechos reservados.</p>
-        <div class="mt-4 space-x-6">
-            <a href="#" class="hover:text-accent-600">LinkedIn</a>
-            <a href="#" class="hover:text-accent-600">Instagram</a>
-        </div>
+    <section id="contact" class="max-w-2xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-light mb-8">Comencemos</h2>
+        <form class="grid gap-6">
+            <input type="text" placeholder="Nombre completo" class="w-full p-4 border border-stone-300 rounded-lg outline-none focus:border-amber-700">
+            <input type="email" placeholder="Correo electrónico" class="w-full p-4 border border-stone-300 rounded-lg outline-none focus:border-amber-700">
+            <select class="w-full p-4 border border-stone-300 rounded-lg outline-none focus:border-amber-700">
+                <option>Selecciona un servicio</option>
+                <option>Inglés General</option>
+                <option>Business English</option>
+                <option>Preparación Certificación</option>
+                <option>Inglés para Niños</option>
+            </select>
+            <textarea placeholder="Cuéntame sobre tus metas" rows="4" class="w-full p-4 border border-stone-300 rounded-lg outline-none focus:border-amber-700"></textarea>
+            <button class="bg-amber-700 text-white py-4 rounded-lg hover:bg-amber-800 transition">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-12 text-stone-400 text-sm">
+        © 2026 Ixel Gudiño. Todos los derechos reservados.
     </footer>
 
+    <script>
+        // Smooth scrolling implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
